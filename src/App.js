@@ -1,30 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import MyImageComponent from './components/sample/image';
-import { FacebookButton, FacebookCount } from "react-social";
-import Shartlink from './components/linkshart/shartlink';
-import YourComponent from './components/linkshart/photosharer';
+import "./App.css";
+import HomePage from "./home/HomePage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SinglePage from "./components/watch/SinglePage";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  let url = "https://github.com";
   return (
-    <div className="App">
-      <div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <YourComponent/>
-          <p>
-            hellow world
-          </p>
-        </div>
-        <div>
-        <FacebookButton url={url} appId={723297579521532}>
-        <FacebookCount url={url} />
-        {" Share " + url}
-        </FacebookButton>
-        </div>
-   
-      </div>
-  
+    <>
+      <Router>
+        <Header />
+
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/singlepage/:id" component={SinglePage} />
+        </Switch>
+
+        <Footer />
+      </Router>
+    </>
   );
 }
 
