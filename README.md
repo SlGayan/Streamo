@@ -9,9 +9,9 @@ A modern, responsive movie browsing platform built using React. Streamo lets use
 ---
 
 ## 🖼️ Screenshot  
-Add your own screenshot to the `public/` folder (example: `screenshot.png`).
+Add your own screenshot to the `public/` folder (example: `demo.png`).
 
-![App Screenshot](./public/screenshot.png)
+![App Screenshot](./public/demo.png)
 
 ---
 
@@ -28,11 +28,9 @@ Add your own screenshot to the `public/` folder (example: `screenshot.png`).
 ## 🛠️ Tech Stack  
 - **React.js**  
 - **React Router DOM**  
-- **CSS / Custom Styles**  
-- **Movie API**  
+- **CSS / Custom Styles**   
 - **Vercel** (Deployment)
 
 ---
 
-## 📂 Folder Structure
 
